@@ -198,21 +198,53 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-}
-
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
   width: 100%;
 }
 
-header nav ul li a {
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+header .menu li {
+  padding: 10px 5px;
+}
+
+header .menu a {
   color: #011C51;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.25em;
+  font-size: 1em;
+}
+
+header .menu a:hover {
+  text-decoration: underline;
+}
+
+header .menu .logo a {
+  font-family: 'Lobster';
+  font-size: 2em;
+  padding: 0;
+  text-decoration: none;
+}
+
+header .menu .toggle i {
+  color: #011C51;
+  font-size: 1.5em;
+}
+
+header .toggle {
+  order: 1;
+}
+
+header .item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
 }
 
 footer {
