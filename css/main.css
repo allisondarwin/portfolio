@@ -206,6 +206,7 @@ header .menu {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding-bottom: 10px;
   width: 90%;
   flex-wrap: wrap;
 }
@@ -245,6 +246,10 @@ header .item {
     text-align: center;
     order: 2;
     display: none;
+}
+
+header .item.active {
+    display: block;
 }
 
 footer {
@@ -304,7 +309,7 @@ footer h2, p {
   justify-content: center;
   align-items: center;
   min-height: 500px;
-  background: url('../img/hero-img.jpg') center no-repeat #333;
+  background: url('../img/hero-img.jpg') center no-repeat #F7CFBA;
   background-size: cover;
 }
 
@@ -522,6 +527,17 @@ footer h2, p {
 
   /* Header Styles */
 
+  header .menu .item a {
+    font-size: 1.25em;
+  }
+
+  header .menu .logo a {
+    font-size: 2.5em;
+  }
+
+  header .menu .toggle i {
+    font-size: 2em;
+  }
 
 
   /* hero-area styles */
@@ -629,14 +645,34 @@ footer h2, p {
 
   /* Header and Footer Styles */
 
-  header nav ul {
-    justify-content: space-between;
-    /*width: 85%;*/
+  header .menu {
+    justify-content: center;
+    padding: 0;
   }
 
-  header nav ul li a {
-    font-size: 1.5em;
+  header .menu .item {
+    display: block;
+    width: auto;
   }
+
+  header .menu .logo {
+    flex: 1;
+    padding-bottom: 10px;
+  }
+
+  header .menu .logo a {
+    font-size: 2.75em;
+  }
+
+  header .menu .toggle {
+    display: none;
+  }
+
+  header .menu li {
+    padding: 10px 10px;
+  }
+
+
 
   /*Hero Area Styles*/
 
