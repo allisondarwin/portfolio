@@ -157,7 +157,7 @@ figure {
 }
 
 img {
-  border-radius: 10%;
+  border-radius: 5px;
   width: 100%
 }
 
@@ -277,6 +277,10 @@ footer .contact {
   /*width: 100%;*/
 }
 
+footer .email {
+  color: #fff;
+}
+
 footer .social {
   display: flex;
   justify-content: center;
@@ -362,6 +366,8 @@ footer h2, p {
 .projects h2 {
   color: #011C51;
   margin: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .projects h3 {
@@ -374,6 +380,11 @@ footer h2, p {
 
 .projects p {
   margin-top: 0px;
+}
+
+.projects .thumbnail-directions {
+  color: #011C51;
+  margin-top: 15px;
 }
 
 
@@ -580,7 +591,6 @@ footer h2, p {
 
   .projects h2 {
     font-size: 2em;
-    margin-bottom: 40px;
   }
 
   .projects h3 {
@@ -695,8 +705,8 @@ footer h2, p {
 
   /* Project Styles */
 
-  .projects h2 {
-    margin-bottom: 50px;
+  .projects .thumbnail-directions {
+    margin: 25px 0;
   }
 
   .projects .project-items {
